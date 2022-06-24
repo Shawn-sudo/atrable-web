@@ -19,21 +19,28 @@ const AppBar = () => {
         zIndex: 10,
       }}
     >
-      <div
+      <Link
+        to="/"
         style={{
-          display: "flex",
-          flexDirection: "row",
+          color: "black",
+          textDecoration: "none",
         }}
       >
-        <Link to="/">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
           <StaticImage
             src="../images/appIconRounded.png"
             alt="logo"
             height={40}
             style={{ margin: 5 }}
           />
-        </Link>
-      </div>
+          <h2 style={{ margin: 0, alignSelf: "center" }}>Atrable</h2>
+        </div>
+      </Link>
       <div
         style={{
           height: 55,
