@@ -5,11 +5,7 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <main
-        style={{
-          minHeight: "100vh",
-        }}
-      >
+      <main>
         <title>Home Page</title>
         <Button
           onPressed={() => {
