@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  background-color: ghostwhite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-logo {
+  height: 24vmin;
+  pointer-events: none;
+  border-radius: 6vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-bounce infinite 2s ease-in-out;
+  }
+}
+
+.App-link {
+  color: #ff5252;
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  border-radius: 17.5px;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+  width: 90vw;
+  min-width: 100px;
+  max-width: 500px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:active {
+  opacity: 0.75;
+}
+
+.black-button {
+  background-color: black;
+  color: white;
+}
+
+.whitesmoke-button {
+  background: whitesmoke;
+  color: black;
+}
+
+.google-style-button {
+  background: repeating-linear-gradient(
+    60deg,
+    #4885ed,
+    #4885ed 100px,
+    #ff5252 100px,
+    #ff5252 200px,
+    #f4c20d 200px,
+    #f4c20d 300px,
+    #4885ed 300px,
+    #4885ed 400px,
+    #3cba54 400px,
+    #3cba54 500px,
+    #ff5252 500px,
+    #ff5252 600px
+  );
+  color: black;
+}
+
+.link {
+  color: black;
+  text-decoration: underline;
+}
+
+.link:active {
+  color: #ff5252;
+}
+
+@keyframes App-logo-bounce {
+  0% {
+    transform: translateY(15px);
+    box-shadow: 0px 0px 0px rgba(112, 144, 156, 0.3);
+  }
+  50% {
+    transform: translateY(-15px);
+    box-shadow: 0px 5px 10px rgba(112, 144, 156, 0.3);
+  }
+  100% {
+    transform: translateY(15px);
+    box-shadow: 0px px 0px rgba(112, 144, 156, 0.3);
+  }
+}
