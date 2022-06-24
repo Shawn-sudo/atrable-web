@@ -3,9 +3,12 @@ import Layout from "../components/Layout";
 
 const PrivacyPolicy = () => {
   return (
-    <Layout>
-      <main>Privacy Policy here</main>
-    </Layout>
+    <>
+      <title>Privacy Policy | Atrable</title>
+      <Layout>
+        <main>Privacy Policy here</main>
+      </Layout>
+    </>
   );
 };
 
