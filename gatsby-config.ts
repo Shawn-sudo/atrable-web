@@ -13,6 +13,18 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Atrable Website`,
+        short_name: `Atrable`,
+        start_url: `/`,
+        background_color: `#705df2`,
+        theme_color: `#705df2`,
+        display: `standalone`,
+        icon: `src/images/appIconRounded.png`,
+      },
+    },
   ],
 };
 
