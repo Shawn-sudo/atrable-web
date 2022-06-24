@@ -1,0 +1,34 @@
+:root {
+  --higher-background-color: ghostwhite;
+  --lower-background-color: white;
+  --disabled-color: grey;
+  --primary-color: rgb(172, 138, 248);
+  --primary-color-darker: rgb(71, 29, 163);
+  --hint-color: rgb(200, 200, 200);
+}
+
+body {
+  margin: 0;
+}
+
+.Button {
+  background-color: var(--higher-background-color);
+  border: none;
+  /* width: 100%; */
+  min-width: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: large;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.horizontal-margin {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
