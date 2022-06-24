@@ -1,5 +1,4 @@
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
 const AppBar = () => {
@@ -32,8 +31,8 @@ const AppBar = () => {
             flexDirection: "row",
           }}
         >
-          <StaticImage
-            src="../images/appIconRounded.png"
+          <img
+            src="/assets/appIconRounded.png"
             alt="logo"
             height={40}
             style={{ margin: 5 }}
