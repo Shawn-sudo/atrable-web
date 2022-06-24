@@ -12,33 +12,39 @@ const Footer = () => {
       }}
     >
       <div className="horizontal-margin">
-        <div
-          style={{
-            display: "flex",
-          }}
-        >
-          <StaticImage
-            src="../images/appIconRounded.png"
-            alt="logo"
-            height={100}
-            width={100}
-          />
-          <div style={{ margin: 15 }}>
-            <h1
-              style={{
-                alignSelf: "center",
-                margin: 0,
-              }}
-            >
-              Atrable
-            </h1>
-            <p
-              style={{ margin: 0, marginLeft: 2.5, color: "var(--hint-color)" }}
-            >
-              Audio Required!
-            </p>
+        <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+          <div
+            style={{
+              display: "flex",
+            }}
+          >
+            <StaticImage
+              src="../images/appIconRounded.png"
+              alt="logo"
+              height={100}
+              width={100}
+            />
+            <div style={{ margin: 15 }}>
+              <h1
+                style={{
+                  alignSelf: "center",
+                  margin: 0,
+                }}
+              >
+                Atrable
+              </h1>
+              <p
+                style={{
+                  margin: 0,
+                  marginLeft: 2.5,
+                  color: "var(--hint-color)",
+                }}
+              >
+                Audio Required!
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
           <Link
             to="https://seihyun.atrable.com/logs/atrable"
