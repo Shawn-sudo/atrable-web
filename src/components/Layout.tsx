@@ -1,4 +1,5 @@
 import React from "react";
+import AppBar from "./AppBar";
 import Footer from "./Footer";
 
 //styles
@@ -16,7 +17,15 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <div style={pageStyles}>
-      {children}
+      <AppBar />
+      <div
+        style={{
+          minHeight: "100vh",
+          marginTop: 55,
+        }}
+      >
+        {children}
+      </div>
       <Footer />
     </div>
   );
