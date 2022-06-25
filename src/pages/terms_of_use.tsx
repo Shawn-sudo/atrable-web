@@ -32,10 +32,28 @@ const PrivacyPolicy = () => {
                 your voice, if you share a post or send a voice message that
                 contains your voice
               </li>
+              <li>
+                your face, if you set profile photo, share a post, or send a
+                message that contains your face
+              </li>
             </ul>
             <dl>
-              your face, if you set profile photo, share a post, or send a
-              message that contains your face
+              Your name and username are saved when you set up your profile.
+              Depending on the situation, changing your profile photo may also
+              save your face if it includes your face. The profile created can
+              be accessed by anyone using Atrable.
+            </dl>
+            <dl>
+              Your email and password are collected when you create an account.
+              If you use Social login (like pressing "Continue with Apple"
+              thingy), password wouldn't be collected. Email would be used to
+              identify your account and to notify you when there's an update on
+              policies. Password would be used to protect your account from
+              others. Don't reuse passwords.
+            </dl>
+            <dl>
+              Your voice and face are collected when you share a post or send a
+              message that contians those.
             </dl>
             <dl>
               For more information, check our{" "}
@@ -129,7 +147,7 @@ const PrivacyPolicy = () => {
             <dl>
               If you're under the age required to manage your own Atrable
               Account, wait until you reach the age! If you cannot wait, you
-              must have your parent or legal guardian's permission to use a
+              must have your parent or legal guardian's permission to use an
               Atrable Account. Have your parent or legal guardian read these
               terms with you. If you're a parent or legal guardian, and you
               allow your child to use Atrable, then these terms apply to you and
