@@ -2,6 +2,8 @@ import { Link } from "gatsby";
 import React from "react";
 import { UAParser } from "ua-parser-js";
 import "../App.css";
+import logo from "../images/appIconRounded.png";
+import downloadOnTheAppStore from "../images/external/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
 
 // UAParser.DEVICE;
 const getOS = new UAParser().getOS();
@@ -33,12 +35,7 @@ const Footer = () => {
                 display: "flex",
               }}
             >
-              <img
-                src="/assets/appIconRounded.png"
-                alt="logo"
-                height={100}
-                width={100}
-              />
+              <img src={logo} alt="logo" height={100} width={100} />
               <div style={{ margin: 15 }}>
                 <h1
                   style={{
@@ -91,7 +88,7 @@ const Footer = () => {
             }}
           >
             <img
-              src="/assets/external/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg"
+              src={downloadOnTheAppStore}
               alt="Download on the App Store"
               height={50}
             />

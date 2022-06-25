@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import logo from "../images/appIconRounded.png";
 
 const AppBar = () => {
   return (
@@ -31,12 +32,7 @@ const AppBar = () => {
             flexDirection: "row",
           }}
         >
-          <img
-            src="/assets/appIconRounded.png"
-            alt="logo"
-            height={40}
-            style={{ margin: 5 }}
-          />
+          <img src={logo} alt="logo" height={40} style={{ margin: 5 }} />
           <h2 style={{ margin: 0, alignSelf: "center" }}>Atrable</h2>
         </div>
       </Link>
