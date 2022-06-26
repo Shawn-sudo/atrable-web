@@ -52,7 +52,7 @@ const PrivacyPolicy = () => {
               others. Don't reuse passwords.
             </dl>
             <dl>
-              Your voice and face are collected when you share a post or send a
+              Your voice and face are saved when you share a post or send a
               message that contians those.
             </dl>
             <dl>
