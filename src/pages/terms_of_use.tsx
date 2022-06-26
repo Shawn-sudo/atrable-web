@@ -101,6 +101,17 @@ const PrivacyPolicy = () => {
               video files.
             </dl>
             <dl>
+              <a
+                href="https://firebase.google.com/docs/functions"
+                style={{ fontWeight: "bold", textDecoration: "none" }}
+              >
+                Cloud Functions for Firebase
+              </a>{" "}
+              (made by Google) is used to notify you on some actions (like new
+              messages from your friend / your friend shared you a post / ... )
+              and count the number of the reactions of posts.
+            </dl>
+            <dl>
               Your data would inevitably be shared with these third parties
               (it's actually only Google). If you trust Google, nice. If you
               don't like Google, well so sad.
