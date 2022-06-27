@@ -59,12 +59,14 @@ const Footer = () => {
           </Link>
         </div>
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-          <Link
-            to="https://seihyun.atrable.com/logs/atrable"
+          <a
+            href="https://seihyun.atrable.com/logs/atrable"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{ color: "white", textDecoration: "none" }}
           >
             <h3>Developing Story</h3>
-          </Link>
+          </a>
           <Link
             to="/privacy_policy"
             style={{ color: "white", textDecoration: "none" }}
