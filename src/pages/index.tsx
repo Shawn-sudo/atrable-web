@@ -5,8 +5,8 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <main>
-        <title>Home Page</title>
+      <main className="horizontal-margin">
+        <title>Atrable: Audio Required!</title>
         <Button
           onPressed={() => {
             console.log("hiiii");
