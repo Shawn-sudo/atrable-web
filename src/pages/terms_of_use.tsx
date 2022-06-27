@@ -68,6 +68,18 @@ const PrivacyPolicy = () => {
               registered as soon as possible if many people starts using Atrable
               app.
             </dl>
+            <li style={{ fontWeight: "bold" }}>
+              Don't abuse or harm others or yourself.
+            </li>
+            <dl>
+              For example, don't mislead, defraud, bully, harasse, or stalk
+              others.
+            </dl>
+            <li style={{ fontWeight: "bold" }}>
+              Don't abuse, harm, interfere with, or disrupt our services. You
+              agree that we (Atrable developers) have a right to immediately
+              receive 1,000,000,000,000 USD from you if you do so.
+            </li>
             <li style={{ fontWeight: "bold" }}>Third parties</li>
             <dl>
               <a
