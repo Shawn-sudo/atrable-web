@@ -1,10 +1,12 @@
 :root {
+  --primary-color: rgb(172, 138, 248);
+  --primary-color-darker: rgb(71, 29, 163);
   --higher-background-color: ghostwhite;
   --lower-background-color: white;
   --disabled-color: grey;
-  --primary-color: rgb(172, 138, 248);
-  --primary-color-darker: rgb(71, 29, 163);
   --hint-color: rgb(200, 200, 200);
+  --shadow-color: rgba(112, 144, 156, 0.3);
+  --shadow-big: 7.5px 15px 50px rgba(112, 144, 156, 0.3);
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -29,8 +31,12 @@ body {
   margin: 0;
 }
 
+p {
+  font-size: large;
+  line-height: 1.5;
+}
+
 .Button {
-  background-color: var(--higher-background-color);
   border: none;
   /* width: 100%; */
   min-width: 100px;
@@ -43,6 +49,17 @@ body {
   margin: 5px;
   border-radius: 20px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.colored-background {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.notcolored-background {
+  color: var(--primary-color);
+  background-color: var(--higher-background-color);
 }
 
 .horizontal-margin {
