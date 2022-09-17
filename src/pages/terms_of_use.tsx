@@ -38,22 +38,28 @@ const PrivacyPolicy = () => {
               </li>
             </ul>
             <dl>
-              Your name and username are saved when you set up your profile.
-              Depending on the situation, changing your profile photo may also
-              save your face if it includes your face. The profile created can
-              be accessed by anyone using Atrable.
+              We inevitably collect your personal information, but we don't
+              analyze it. We aren't interested in you.
             </dl>
             <dl>
+              <strong>Profile: </strong>
+              Your name and username are saved when you set up your profile. If
+              your profile photo contains your face, your face would be saved in
+              our server. Profiles can be accessed by anyone using Atrable.
+            </dl>
+            <dl>
+              <strong>Authentication: </strong>
               Your email and password are collected when you create an account.
               If you use Social login (like pressing "Continue with Apple"
-              thingy), password wouldn't be collected. Email would be used to
-              identify your account and to notify you when there's an update on
-              policies. Password would be used to protect your account from
-              others. Don't reuse passwords.
+              thingy), password wouldn't be collected. Email is used to identify
+              your account and to notify you when there's an update on policies.
+              Password is used to protect your account from others. Don't reuse
+              passwords.
             </dl>
             <dl>
+              <strong>Post and Chat: </strong>
               Your voice and face are saved when you share a post or send a
-              message that contians those.
+              message that contains those (I mean, obviously).
             </dl>
             <dl>
               For more information, check our{" "}
@@ -76,9 +82,7 @@ const PrivacyPolicy = () => {
               others.
             </dl>
             <li style={{ fontWeight: "bold" }}>
-              Don't abuse, harm, interfere with, or disrupt our services. You
-              agree that we (Atrable developers) have a right to immediately
-              receive 1,000,000,000,000 USD from you if you do so.
+              Don't abuse, harm, interfere with, or disrupt our services.
             </li>
             <li style={{ fontWeight: "bold" }}>Third parties</li>
             <dl>
@@ -125,8 +129,8 @@ const PrivacyPolicy = () => {
             </dl>
             <dl>
               Your data would inevitably be shared with these third parties
-              (it's actually only Google). If you trust Google, nice. If you
-              don't like Google, well so sad.
+              (Google). If you trust Google, nice. If you don't like Google,
+              well so sad.
             </dl>
             <li style={{ fontWeight: "bold" }}>Age Requirements</li>
             <dl>
@@ -172,8 +176,8 @@ const PrivacyPolicy = () => {
               Account, wait until you reach the age! If you cannot wait, you
               must have your parent or legal guardian's permission to use an
               Atrable Account. Have your parent or legal guardian read these
-              terms with you. If you're a parent or legal guardian, and you
-              allow your child to use Atrable, then these terms apply to you and
+              terms with you. If you're a parent or legal guardian, and if you
+              allow your child to use Atrable, these terms apply to you and
               you're responsible for your child's activity on Atrable.
             </dl>
 
