@@ -2,28 +2,15 @@ import { Link } from "gatsby";
 import React from "react";
 import logo from "../images/appIconRounded.png";
 
-const AppBar = () => {
+function AppBar() {
   return (
-    <div
-      style={{
-        backgroundColor: "rgba(248, 248, 255, 0.72)",
-        height: 55,
-        width: "100%",
-        display: "flex",
-        position: "fixed",
-        top: 0,
-        backdropFilter: "blur(20px) saturate(180%)",
-        WebkitBackdropFilter: "blur(20px) saturate(180%)",
-        alignItems: "center",
-        justifyContent: "space-between",
-        zIndex: 10,
-      }}
-    >
+    <div className="app-bar">
       <Link
         to="/"
         style={{
           color: "black",
           textDecoration: "none",
+          borderRadius: 15,
         }}
       >
         <div
@@ -38,7 +25,6 @@ const AppBar = () => {
       </Link>
       <div
         style={{
-          height: 55,
           display: "flex",
           alignItems: "flex-end",
         }}
@@ -80,6 +66,6 @@ const AppBar = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AppBar;
