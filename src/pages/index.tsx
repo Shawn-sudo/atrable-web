@@ -1,15 +1,31 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import appScreenshot_feed1 from "../images/app_screenshots/IMG_7623.png";
-import appScreenshot_recorder from "../images/app_screenshots/Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-20 at 21.39.56.png";
-import appScreenshot_myProfile1 from "../images/app_screenshots/IMG_7624.png";
-import appScreenshot_myProfile2 from "../images/app_screenshots/IMG_7625.png";
-import appScreenshot_friendsProfile from "../images/app_screenshots/IMG_7626.png";
+import { StaticImage } from "gatsby-plugin-image";
+
+const appScreenshot_feed1 = "../images/app_screenshots/IMG_7623.png";
+const appScreenshot_recorder =
+  "../images/app_screenshots/Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-20 at 21.39.56.png";
+const appScreenshot_myProfile1 = "../images/app_screenshots/IMG_7624.png";
+const appScreenshot_myProfile2 = "../images/app_screenshots/IMG_7625.png";
+const appScreenshot_friendsProfile = "../images/app_screenshots/IMG_7626.png";
+
+const staticImageStyle = {
+  margin: "5vmin",
+  maxWidth: "35vmin",
+  overflow: "visible",
+};
+const staticImageImgStyle = {
+  margin: 0,
+  borderRadius: 20,
+  boxShadow: "var(--shadow-big)",
+};
 
 function IndexPage() {
   return (
     <Layout>
-      <title>Atrable: Audio Required!</title>
+      <title>Atrable: Audio Diaries</title>
+      {/* or Travel stories with audio */}
+      {/* or Stories of traveling through life */}
       <main className="horizontal-margin">
         {/* Audio based social media, Atrable */}
         <div
@@ -19,14 +35,13 @@ function IndexPage() {
             justifyContent: "center",
           }}
         >
-          <img
+          <StaticImage
             src={appScreenshot_feed1}
             alt="Atrable is based on audio"
-            style={{
-              maxHeight: "calc(75vh - 150px)",
-              margin: "5vmin",
-              borderRadius: 20,
-              boxShadow: "var(--shadow-big)",
+            style={{ ...staticImageStyle, alignItems: "center" }}
+            imgStyle={{
+              ...staticImageImgStyle,
+              alignItems: "center",
             }}
           />
           <div style={{ margin: "5vmin" }}>
@@ -49,7 +64,7 @@ function IndexPage() {
               </a>
               <p
                 style={{
-                  color: "var(--hint-color)",
+                  color: "var(--hint-color-dark)",
                   marginTop: "auto",
                   marginBottom: "auto",
                 }}
@@ -60,7 +75,7 @@ function IndexPage() {
           </div>
         </div>
 
-        {/* No need to be fun */}
+        {/* Audio: candid */}
         <div
           style={{
             display: "flex",
@@ -68,27 +83,30 @@ function IndexPage() {
             justifyContent: "center",
           }}
         >
-          <img
+          <StaticImage
             src={appScreenshot_recorder}
             alt="My Profile"
-            style={{
-              maxHeight: "calc(75vh - 150px)",
-              width: "fit-content",
-              margin: "5vmin",
-              borderRadius: 20,
-              boxShadow: "var(--shadow-big)",
-            }}
+            style={staticImageStyle}
+            imgStyle={staticImageImgStyle}
           />
 
           <div style={{ margin: "5vmin" }}>
-            <h1 style={{ textAlign: "center" }}>No need to be fun</h1>
-            <p style={{ textAlign: "center" }}>
+            <h1 style={{ textAlign: "center" }}>
+              Record your stories with audio
+            </h1>
+            <p style={{ textAlign: "start", maxWidth: 500 }}>
               Just like a diary, record your experiences with audio.
+            </p>
+            <p style={{ textAlign: "start", maxWidth: 500 }}>
+              Unlike photos, no visible thing is shown. Don't care about
+              superficial stuff and focus on what truly they are.
             </p>
           </div>
         </div>
 
-        {/* Feel your past with audio */}
+        {/* Selectively chat about the diary */}
+
+        {/* Audio: vibes */}
         <div
           style={{
             display: "flex",
@@ -99,37 +117,42 @@ function IndexPage() {
           <div
             style={{
               display: "flex",
-              margin: "5vmin",
             }}
           >
-            <img
+            <StaticImage
               src={appScreenshot_myProfile1}
               alt="My Profile"
               style={{
-                maxHeight: "calc(75vh - 100px)",
-                maxWidth: "50vw",
-                borderRadius: 20,
-                boxShadow: "var(--shadow-big)",
+                ...staticImageStyle,
+                marginTop: 35,
+                marginBottom: 65,
+                marginLeft: 45,
+                marginRight: 0,
               }}
+              imgStyle={staticImageImgStyle}
             />
-            <img
+            <StaticImage
               src={appScreenshot_myProfile2}
               alt="My past posts"
               style={{
-                maxHeight: "calc(75vh - 100px)",
-                maxWidth: "50vw",
-                borderRadius: 20,
-                boxShadow: "var(--shadow-big)",
+                ...staticImageStyle,
+                marginTop: 35,
+                marginBottom: 65,
+                marginLeft: 0,
+                marginRight: 65,
               }}
+              imgStyle={staticImageImgStyle}
             />
+            {/* TODO */}
           </div>
           <div style={{ margin: "5vmin" }}>
-            <h1 style={{ textAlign: "center" }}>Feel your past with audio</h1>
+            <h1 style={{ textAlign: "center" }}>Feel the vibes with audio</h1>
             <p style={{ textAlign: "start", maxWidth: 500 }}>
-              Audio records vibe of the moment. The sound of everything (bell
-              ringing, people chattering, windows opening, and keyboards typing)
-              all together form a beautiful vibe. Feel those while listening to
-              your past posts.
+              Audio records vibe of the moment. Sounds of everything{" "}
+              {/* (bell
+              ringing, people chattering, windows opening, and keyboards typing) */}
+              form a beautiful vibe. Feel those while listening to your and
+              others' posts.
             </p>
           </div>
         </div>
@@ -148,15 +171,11 @@ function IndexPage() {
               margin: "5vmin",
             }}
           >
-            <img
+            <StaticImage
               src={appScreenshot_friendsProfile}
               alt="My past posts"
-              style={{
-                maxHeight: "calc(75vh - 100px)",
-                maxWidth: "50vw",
-                borderRadius: 20,
-                boxShadow: "var(--shadow-big)",
-              }}
+              style={staticImageStyle}
+              imgStyle={staticImageImgStyle}
             />
           </div>
           <div style={{ margin: "5vmin" }}>

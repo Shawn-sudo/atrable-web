@@ -17,7 +17,7 @@ const Footer = () => {
         color: "white",
       }}
     >
-      <div className="horizontal-margin">
+      <div className="horizontal-margin" style={{ padding: 20 }}>
         <div
           style={{
             display: "flex",
@@ -49,10 +49,10 @@ const Footer = () => {
                   style={{
                     margin: 0,
                     marginLeft: 2.5,
-                    color: "var(--hint-color)",
+                    color: "var(--hint-color-light)",
                   }}
                 >
-                  Audio Required!
+                  Stories of traveling through life
                 </p>
               </div>
             </div>
