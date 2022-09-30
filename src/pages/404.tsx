@@ -6,8 +6,8 @@ import Layout from "../components/Layout";
 const NotFoundPage = () => {
   return (
     <Layout>
+      <title>Page Not found (404) | Atrable</title>
       <main className="horizontal-margin">
-        <title>Page Not found (404) | Atrable</title>
         <h1>Page not found</h1>
         <h3>404</h3>
         <p>
