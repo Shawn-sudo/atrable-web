@@ -24,172 +24,169 @@ function IndexPage() {
   return (
     <Layout>
       <title>Atrable: Audio Diaries</title>
-      {/* or Travel stories with audio */}
-      {/* or Stories of traveling through life */}
-      <main className="horizontal-margin">
+      <main className="horizontal-margin" id="index-descriptions">
         {/* Audio based social media, Atrable */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          <StaticImage
-            src={appScreenshot_feed1}
-            alt="Atrable is based on audio"
-            style={{ ...staticImageStyle, alignItems: "center" }}
-            imgStyle={{
-              ...staticImageImgStyle,
-              alignItems: "center",
+        <article>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
-          />
-          <div style={{ margin: "5vmin" }}>
-            <h1 style={{ textAlign: "center" }}>
-              Audio based social media, Atrable
-            </h1>
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <a
-                href="https://get.atrable.com"
-                className="Button colored-background"
-                style={{ margin: "3vmin" }}
-              >
-                Get Atrable
-              </a>
-              <p
+            id="description-0"
+          >
+            <div style={{ margin: "5vmin" }}>
+              <h1 style={{ textAlign: "center" }}>
+                Audio based social media, Atrable
+              </h1>
+              <div
                 style={{
-                  color: "var(--hint-color-dark)",
-                  marginTop: "auto",
-                  marginBottom: "auto",
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
-                Learn More ↓
-              </p>
+                <a
+                  href="https://get.atrable.com"
+                  className="Button colored-background"
+                  style={{ margin: "3vmin" }}
+                >
+                  Get Atrable
+                </a>
+                <p
+                  style={{
+                    color: "var(--hint-color-dark)",
+                    marginTop: "auto",
+                    marginBottom: "auto",
+                  }}
+                >
+                  Learn More ↓
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        {/* Audio: candid */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          <StaticImage
-            src={appScreenshot_recorder}
-            alt="My Profile"
-            style={staticImageStyle}
-            imgStyle={staticImageImgStyle}
-          />
+        {/* Record your stories with audio */}
+        <article>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+            id="description-1"
+          >
+            <StaticImage
+              src={appScreenshot_recorder}
+              alt="My Profile"
+              style={staticImageStyle}
+              imgStyle={staticImageImgStyle}
+            />
 
-          <div style={{ margin: "5vmin" }}>
-            <h1 style={{ textAlign: "center" }}>
-              Record your stories with audio
-            </h1>
-            <p style={{ textAlign: "start", maxWidth: 500 }}>
-              Just like a diary, record your experiences with audio.
-            </p>
-            <p style={{ textAlign: "start", maxWidth: 500 }}>
-              Unlike photos, no visible thing is shown. Don't care about
-              superficial stuff and focus on what truly they are.
-            </p>
+            <div style={{ margin: "5vmin" }}>
+              <h1 style={{ textAlign: "center" }}>
+                Record your stories with audio
+              </h1>
+              {/* Hi there, this page contains audio. So yea just like a diary, record your experience with audio */}
+            </div>
           </div>
-        </div>
+        </article>
 
         {/* Selectively chat about the diary */}
 
         {/* Audio: vibes */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
+        <article>
           <div
             style={{
               display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
+            id="description-2"
           >
-            <StaticImage
-              src={appScreenshot_myProfile1}
-              alt="My Profile"
+            <div
               style={{
-                ...staticImageStyle,
-                marginTop: 35,
-                marginBottom: 65,
-                marginLeft: 45,
-                marginRight: 0,
+                display: "flex",
               }}
-              imgStyle={staticImageImgStyle}
-            />
-            <StaticImage
-              src={appScreenshot_myProfile2}
-              alt="My past posts"
-              style={{
-                ...staticImageStyle,
-                marginTop: 35,
-                marginBottom: 65,
-                marginLeft: 0,
-                marginRight: 65,
-              }}
-              imgStyle={staticImageImgStyle}
-            />
-            {/* TODO */}
+            >
+              <StaticImage
+                src={appScreenshot_myProfile1}
+                alt="My Profile"
+                style={{
+                  ...staticImageStyle,
+                  marginTop: 35,
+                  marginBottom: 65,
+                  marginLeft: 45,
+                  marginRight: 0,
+                }}
+                imgStyle={staticImageImgStyle}
+              />
+              <StaticImage
+                src={appScreenshot_myProfile2}
+                alt="My past posts"
+                style={{
+                  ...staticImageStyle,
+                  marginTop: 35,
+                  marginBottom: 65,
+                  marginLeft: 0,
+                  marginRight: 65,
+                }}
+                imgStyle={staticImageImgStyle}
+              />
+            </div>
+            <div style={{ margin: "5vmin" }}>
+              <h1 style={{ textAlign: "center" }}>Feel the vibes with audio</h1>
+              <p style={{ textAlign: "start", maxWidth: 500 }}>
+                Audio records the moment vividly.
+                {/* Audio records the moment vividly. Sounds of everything, so if I just be quiet, ..., 
+              you can hear of myself walking, and some cars are passing by. With audio like this, you can imagine 
+              what is going on, as if you are reading a book. 
+              */}
+              </p>
+            </div>
           </div>
-          <div style={{ margin: "5vmin" }}>
-            <h1 style={{ textAlign: "center" }}>Feel the vibes with audio</h1>
-            <p style={{ textAlign: "start", maxWidth: 500 }}>
-              Audio records vibe of the moment. Sounds of everything{" "}
-              {/* (bell
-              ringing, people chattering, windows opening, and keyboards typing) */}
-              form a beautiful vibe. Feel those while listening to your and
-              others' posts.
-            </p>
-          </div>
-        </div>
+        </article>
 
         {/* Meet your friends through audio */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
+        <article>
           <div
             style={{
               display: "flex",
-              margin: "5vmin",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
+            id="description-3"
           >
-            <StaticImage
-              src={appScreenshot_friendsProfile}
-              alt="My past posts"
-              style={staticImageStyle}
-              imgStyle={staticImageImgStyle}
-            />
+            <div
+              style={{
+                display: "flex",
+                margin: "5vmin",
+              }}
+            >
+              <StaticImage
+                src={appScreenshot_friendsProfile}
+                alt="My past posts"
+                style={staticImageStyle}
+                imgStyle={staticImageImgStyle}
+              />
+            </div>
+            <div style={{ margin: "5vmin" }}>
+              <h1 style={{ textAlign: "center" }}>
+                Meet your friends through audio
+              </h1>
+              {/* This is the social part of Atrable. 
+            On the picture next to me, there's a profile of Not_David. 
+            Not_David is my friend, who keeps his journal even though no one made him to do.
+            Atrable is kinda inspired by that, although the project itself started like 2 years ago.
+            Yea not for the app itself, but for wordings, yea it was definitely inspired by him. 
+            I mean I know that it feels really cool to keep a diary, but it's kinda annoying to do so.
+            With Atrable, you can keep track on your journal only by recording what's in your mind.
+            */}
+            </div>
           </div>
-          <div style={{ margin: "5vmin" }}>
-            <h1 style={{ textAlign: "center" }}>
-              Meet your friends through audio
-            </h1>
-            <p style={{ textAlign: "start", maxWidth: 500 }}>
-              On traditional photo based social media (Instagram, Snapchat,
-              BeReal, vsco, ...), my friends only share their cool photos. With
-              those photos, I couldn't really know who they are. Using audio, we
-              get to know each other better.
-            </p>
-          </div>
-        </div>
+        </article>
+
         <div style={{}}>
           <div style={{ margin: "5vmin" }}>
             <h1 style={{ textAlign: "center" }}>People love Atrable 🤩</h1>
