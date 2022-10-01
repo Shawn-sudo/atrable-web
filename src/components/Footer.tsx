@@ -52,7 +52,7 @@ const Footer = () => {
                     color: "var(--hint-color-light)",
                   }}
                 >
-                  Stories of traveling through life
+                  Stories of a travel.
                 </p>
               </div>
             </div>
