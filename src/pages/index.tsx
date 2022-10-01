@@ -11,7 +11,7 @@ const appScreenshot_friendsProfile = "../images/app_screenshots/IMG_7626.png";
 
 const staticImageStyle = {
   margin: "5vmin",
-  maxWidth: "35vmin",
+  maxWidth: "32vmin",
   overflow: "visible",
 };
 const staticImageImgStyle = {
