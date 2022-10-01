@@ -1,15 +1,10 @@
 import { Link } from "gatsby";
 import React from "react";
-import { UAParser } from "ua-parser-js";
 import "../App.css";
 import logo from "../images/appIconRounded.png";
 import downloadOnTheAppStore from "../images/external/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
 
-// UAParser.DEVICE;
-const getOS = new UAParser().getOS();
-
 const Footer = () => {
-  console.log(getOS);
   return (
     <footer
       style={{
@@ -81,14 +76,7 @@ const Footer = () => {
           </Link>
         </div>
         <div style={{ display: "flex", justifyContent: "end" }}>
-          <a
-            href={"https://apps.apple.com/us/app/atrable/id1630551248"}
-            onClick={() => {
-              if (getOS.name != "iOS") {
-                console.log("todo: show the qr code");
-              }
-            }}
-          >
+          <a href={"https://apps.apple.com/us/app/atrable/id1630551248"}>
             <img
               src={downloadOnTheAppStore}
               alt="Download on the App Store"
