@@ -10,23 +10,20 @@ const PrivacyPolicy = () => {
         <main className="horizontal-margin">
           <h1>Terms of Use</h1>
           <p>
-            More of crazy law stuff would be put here later on. For now, our
-            Terms of Use states these:
+            More law stuff would be put here later on. For now, our Terms of Use
+            states these:
           </p>
 
           <ol>
             <li style={{ fontWeight: "bold" }}>Privacy</li>
-            <dl>
-              We collect your personal information! (quite scary huh). It
-              includes
-            </dl>
+            <dl>We collect your personal information. It includes</dl>
             <ul>
               <li>your name</li>
               <li>your username</li>
               <li>your email</li>
               <li>
-                your password (hashed with salt) (not joking, that's how you
-                properly protect the original passwords from bad hackers)
+                your password (hashed with salt) (that's how you properly
+                protect the original passwords from bad hackers)
               </li>
               <li>
                 your voice, if you share a post or send a voice message that
@@ -38,13 +35,14 @@ const PrivacyPolicy = () => {
               </li>
             </ul>
             <dl>
-              We inevitably collect your personal information, but we don't
-              analyze it. We aren't interested in you.
+              If you share these personal data with us, we would save those on
+              our server, but we don't analyze it. We aren't really interested
+              in you.
             </dl>
             <dl>
               <strong>Profile: </strong>
               Your name and username are saved when you set up your profile. If
-              your profile photo contains your face, your face would be saved in
+              your profile photo contains your face, your face would be saved on
               our server. Profiles can be accessed by anyone using Atrable.
             </dl>
             <dl>
@@ -58,8 +56,8 @@ const PrivacyPolicy = () => {
             </dl>
             <dl>
               <strong>Post and Chat: </strong>
-              Your voice and face are saved when you share a post or send a
-              message that contains those (I mean, obviously).
+              Your voice and face are saved in our server when you share a post
+              or send a message that contains those.
             </dl>
             <dl>
               For more information, check our{" "}
@@ -129,8 +127,7 @@ const PrivacyPolicy = () => {
             </dl>
             <dl>
               Your data would inevitably be shared with these third parties
-              (Google). If you trust Google, nice. If you don't like Google,
-              well so sad.
+              (Google).
             </dl>
             <li style={{ fontWeight: "bold" }}>Age Requirements</li>
             <dl>
@@ -183,11 +180,11 @@ const PrivacyPolicy = () => {
 
             <li style={{ fontWeight: "bold" }}>When we change our policies</li>
             <dl>
-              We'll notify you before we change our policies. We wouldn't
-              necessarily notify you if the change only includes fixing typo. We
-              save your email address on our server to do so. You'll have the
-              opportunity to review the changed policies before you choose to
-              continue using Atrable.
+              We'll notify you before we change our policies. We save your email
+              address on our server to do so. You'll have an opportunity to
+              review the changed policies before you choose to continue using
+              Atrable. We wouldn't necessarily notify you if the change only
+              includes fixing typo.
             </dl>
           </ol>
         </main>
