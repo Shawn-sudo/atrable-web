@@ -1,20 +1,11 @@
 {
   "applinks": {
+    "apps": [],
     "details": [
       {
-        "appIDs": [
-          "A989XQ5MV5.com.atrable.atrable"
-        ],
-        "components": [
-          {
-            "#": "no_universal_links",
-            "exclude": true,
-            "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
-          },
-          {
-            "/": "/testing/*",
-            "comment": "Matches any URL whose path starts with /buy/"
-          }
+        "appID": "A989XQ5MV5.com.atrable.atrable",
+        "paths": [
+          "/hitesting"
         ]
       }
     ]
