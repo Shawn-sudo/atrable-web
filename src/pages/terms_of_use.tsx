@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 
-const PrivacyPolicy = () => {
+const TermsOfUse = () => {
   return (
     <>
       <title>Terms of Use | Atrable</title>
@@ -69,8 +69,7 @@ const PrivacyPolicy = () => {
               website. He wanted to have a .com domain, and "Atrable" was the
               only name he came up with which .com domain hasn't been taken. The
               company "Atrable" is not registered yet, but it would be
-              registered as soon as possible if many people starts using Atrable
-              app.
+              registered as soon as possible if people start using Atrable.
             </dl>
             <li style={{ fontWeight: "bold" }}>
               Don't abuse or harm others or yourself.
@@ -193,4 +192,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default TermsOfUse;
