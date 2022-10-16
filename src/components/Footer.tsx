@@ -47,7 +47,7 @@ const Footer = () => {
                     color: "var(--hint-color-light)",
                   }}
                 >
-                  Stories of a travel.
+                  Stories with audio
                 </p>
               </div>
             </div>
