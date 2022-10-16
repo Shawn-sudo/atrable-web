@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "atrable-web",
-  "author": "Shawn",
+  "author": "Seihyun (Shawn) Lee",
   "keywords": [
-    "gatsby"
+    "atrable",
+    "diary",
+    "audio",
+    "chat"
   ],
   "scripts": {
     "develop": "gatsby develop",
