@@ -7,8 +7,8 @@
   --hint-color-dark: rgb(150, 150, 150);
   --hint-color-light: rgb(180, 180, 180);
   --shadow-color: rgba(112, 144, 156, 0.3);
-  --shadow-big: 7.5px 15px 50px rgba(112, 144, 156, 0.3);
-  --shadow-small: 0px 5px 10px rgba(112, 144, 156, 0.3);
+  --shadow-big: 7.5px 15px 50px rgba(112, 144, 156, 0.15);
+  --shadow-small: 0px 5px 10px rgba(112, 144, 156, 0.15);
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -55,7 +55,7 @@ p {
   transition: 0.25s;
   transition-timing-function: ease-in-out;
 }
-.Button:focus {
+.Button:hover {
   box-shadow: var(--shadow-small);
 }
 
@@ -72,9 +72,6 @@ p {
   background-color: white;
 }
 .notcolored-background:hover {
-  background-color: ghostwhite;
-}
-.notcolored-background:focus {
   background-color: ghostwhite;
 }
 
