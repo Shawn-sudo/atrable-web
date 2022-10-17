@@ -46,7 +46,7 @@ function IndexPage() {
               }}
             >
               <h1>
-                It's your story, record it.
+                It's your story<small>;</small> record it.
                 {/* Record your stories */}
                 {/* 네 이야기를 기록해봐 */}
               </h1>
