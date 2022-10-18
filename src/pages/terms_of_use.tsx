@@ -81,7 +81,9 @@ const TermsOfUse = () => {
             <li style={{ fontWeight: "bold" }}>
               Don't abuse, harm, interfere with, or disrupt our services.
             </li>
-            <li style={{ fontWeight: "bold" }}>Third parties</li>
+            <li style={{ fontWeight: "bold" }}>
+              Service Providers (Third parties)
+            </li>
             <dl>
               <a
                 href="https://firebase.google.com/docs/auth"
@@ -125,8 +127,16 @@ const TermsOfUse = () => {
               and count the number of the reactions of posts.
             </dl>
             <dl>
-              Your data would inevitably be shared with these third parties
-              (Google).
+              Your data is transferred to the service providers listed above.
+            </dl>
+            <dl>
+              Just fyi,{" "}
+              <a href="https://support.google.com/googleplay/android-developer/answer/10787469?hl=en#sharing&zippy=%2Cdata-sharing">
+                Google doesn't count "transferring data to service providers" as
+                "sharing data with third party"
+              </a>
+              , so our Google Play Data Safety page does not say that we share
+              your data with third party.
             </dl>
             <li style={{ fontWeight: "bold" }}>Age Requirements</li>
             <dl>
