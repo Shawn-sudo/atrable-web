@@ -11,6 +11,7 @@ const appScreenshot_directMessageChatroom =
   "../images/app_screenshots/Simulator Screen Shot - iPhone 11 Pro Max - 2022-10-08 at 22.59.04.png";
 const appScreenshot_postSharingPage =
   "../images/app_screenshots/Simulator Screen Shot - iPhone 11 Pro Max - 2022-10-08 at 23.19.04.png";
+const appScreenshot_myProfile = "../images/app_screenshots/IMG_7625.png";
 
 const staticImageStyle: React.CSSProperties = {
   margin: "5vmin",
@@ -19,7 +20,7 @@ const staticImageStyle: React.CSSProperties = {
 };
 const staticImageImgStyle: React.CSSProperties = {
   margin: 0,
-  borderRadius: "3vmin",
+  borderRadius: "2.5vmin",
   boxShadow: "var(--shadow-big)",
 };
 
@@ -36,7 +37,6 @@ function IndexPage() {
               flexWrap: "wrap",
               justifyContent: "center",
             }}
-            id="description-0"
           >
             <div
               style={{
@@ -98,21 +98,20 @@ function IndexPage() {
             <PostViewer postId="testing123" />
           </div> */}
 
-          {/* Chat about it */}
+          {/* Record your stories */}
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
+              marginBottom: 100,
             }}
-            id="description-2"
           >
             <div
               style={{
                 display: "flex",
                 justifyContent: "space-around",
                 maxWidth: 900,
-                marginBottom: 100,
               }}
             >
               <StaticImage
@@ -147,6 +146,26 @@ function IndexPage() {
               <h1 style={{ textAlign: "center" }}>Record your stories</h1>
               <p>With audio, save your memories vividly.</p>
               {/* <p>Talk about the diary through direct messages.</p> */}
+            </div>
+          </div>
+
+          {/* Listen to yourself */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            <StaticImage
+              src={appScreenshot_myProfile}
+              alt="My Profile"
+              style={staticImageStyle}
+              imgStyle={staticImageImgStyle}
+            />
+            <div style={{ margin: "5vmin", maxWidth: 500 }}>
+              <h1 style={{ textAlign: "center" }}>Listen to yourself</h1>
+              <p>Listen to your past recordings on your profile page.</p>
             </div>
           </div>
 
