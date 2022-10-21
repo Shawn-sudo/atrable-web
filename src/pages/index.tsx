@@ -54,9 +54,12 @@ function IndexPage() {
                   margin: 30,
                 }}
               >
-                <h1 style={{ margin: 0 }}>It's your story.</h1>
-                <div style={{ width: 10 }} />
-                <h1 style={{ margin: 0 }}>Record it.</h1>
+                <h1 style={{ margin: 0, marginLeft: 5, marginRight: 5 }}>
+                  It's your story.
+                </h1>
+                <h1 style={{ margin: 0, marginLeft: 5, marginRight: 5 }}>
+                  Record it.
+                </h1>
               </div>
               <div
                 style={{
