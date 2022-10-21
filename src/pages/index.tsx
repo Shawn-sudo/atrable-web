@@ -45,11 +45,19 @@ function IndexPage() {
                 minHeight: "30vh",
               }}
             >
-              <h1>
-                It's your story. Record it.
-                {/* Record your stories */}
-                {/* 네 이야기를 기록해봐 */}
-              </h1>
+              {/* 네 이야기를 기록해봐 */}
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                  margin: 30,
+                }}
+              >
+                <h1 style={{ margin: 0 }}>It's your story.</h1>
+                <div style={{ width: 10 }} />
+                <h1 style={{ margin: 0 }}>Record it.</h1>
+              </div>
               <div
                 style={{
                   width: "100%",
@@ -143,7 +151,7 @@ function IndexPage() {
               />
             </div>
             <div style={{ margin: "5vmin", maxWidth: 500 }}>
-              <h1 style={{ textAlign: "center" }}>Record your stories</h1>
+              <h1 style={{ textAlign: "center" }}>Audio Diaries</h1>
               <p>With audio, save your memories vividly.</p>
               {/* <p>Talk about the diary through direct messages.</p> */}
             </div>
