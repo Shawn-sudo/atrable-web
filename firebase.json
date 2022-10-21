@@ -13,6 +13,12 @@
         ]
       }
     ],
-    "appAssociation": "NONE"
+    "appAssociation": "NONE",
+    "rewrites": [
+      {
+        "source": "/u/**",
+        "destination": "/u/[...]/index.html"
+      }
+    ]
   }
 }

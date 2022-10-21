@@ -5,7 +5,8 @@
       {
         "appID": "A989XQ5MV5.com.atrable.atrable",
         "paths": [
-          "/hitesting"
+          "/hitesting",
+          "/u/*"
         ]
       }
     ]
