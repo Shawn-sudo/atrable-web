@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import logo from "../images/appIconRounded.png";
+import logo from "../images/icon2_rounded.svg";
 
 function AppBar() {
   return (
