@@ -1,6 +1,7 @@
 :root {
   --primary-color: rgb(172, 138, 248);
   --primary-color-darker: rgb(71, 29, 163);
+  --error-color: rgb(253, 216, 53);
   --higher-background-color: ghostwhite;
   --lower-background-color: white;
   --disabled-color: grey;

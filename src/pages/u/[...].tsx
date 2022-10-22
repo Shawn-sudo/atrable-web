@@ -15,7 +15,7 @@ function ProfilePage() {
 
 function ProfileViewer(props: { path: string }) {
   const params = useParams();
-  let displayId = params?.displayId;
+  const displayId: string = params?.displayId;
   const [displayName, setDisplayName]: [string | undefined, any] = useState();
   const [profilePhoto, setProfilePhoto]: [string | undefined, any] = useState();
   useEffect(() => {
@@ -32,8 +32,8 @@ function ProfileViewer(props: { path: string }) {
       const querySnapshot = await getDocs(q);
       if (querySnapshot.docs.length < 1) return;
       const profileData_raw = querySnapshot.docs[0].data();
-      setDisplayName(profileData_raw["displayName"]);
-      setProfilePhoto(profileData_raw["photoURL"]);
+      setDisplayName(profileData_raw["displayName"] ?? null);
+      setProfilePhoto(profileData_raw["photoURL"] ?? null);
     } catch (e) {
       console.log(`error: ${e}`);
     }
@@ -54,27 +54,64 @@ function ProfileViewer(props: { path: string }) {
             display: "flex",
           }}
         >
-          <img
-            src={profilePhoto ?? defaultProfilePhoto}
-            alt={`${displayName}'s profile photo`}
-            style={{
-              borderRadius: typeof profilePhoto != "undefined" ? 30 : 50,
-              height: 100,
-              width: 100,
-              objectFit: "cover",
-              boxShadow: "var(--shadow-big)",
-            }}
-          />
+          {typeof profilePhoto == "string" ? (
+            <img
+              src={profilePhoto ?? defaultProfilePhoto}
+              alt={`${displayName}'s profile photo`}
+              style={{
+                borderRadius: typeof profilePhoto != "undefined" ? 30 : 50,
+                height: 100,
+                width: 100,
+                objectFit: "cover",
+                boxShadow: "var(--shadow-big)",
+              }}
+            />
+          ) : profilePhoto === null ? (
+            // No profile photo: show the default one
+            <img
+              src={defaultProfilePhoto}
+              alt={`${displayName}'s profile photo`}
+              style={{
+                borderRadius: 50,
+                height: 100,
+                width: 100,
+                objectFit: "cover",
+                boxShadow: "var(--shadow-big)",
+              }}
+            />
+          ) : (
+            // Loading
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 30,
+                height: 100,
+                width: 100,
+                objectFit: "cover",
+                boxShadow: "var(--shadow-big)",
+              }}
+            />
+          )}
+
           <div style={{ margin: 20 }}>
             <h1 style={{ margin: 0 }}>{displayName} </h1>
             <div>@{displayId}</div>
           </div>
         </div>
-        <p style={{ textAlign: "center" }}>
-          Open the app to see{" "}
-          {typeof displayName != "undefined" ? `${displayName}'s` : "the"}{" "}
-          diaries
-        </p>
+        <div
+          style={{
+            backgroundColor: "var(--error-color)",
+            margin: 20,
+            padding: 10,
+            borderRadius: 20,
+          }}
+        >
+          <p style={{ textAlign: "center" }}>
+            Get Atrable app to see{" "}
+            {typeof displayName != "undefined" ? `${displayName}'s` : "the"}{" "}
+            diaries
+          </p>
+        </div>
       </main>
     </Layout>
   );
