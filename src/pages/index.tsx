@@ -1,7 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
-import PostViewer from "../components/PostViewer";
 
 const appScreenshot_home =
   "../images/app_screenshots/Simulator Screen Shot - iPhone 11 Pro Max - 2022-10-08 at 21.39.56.png";
@@ -87,27 +86,6 @@ function IndexPage() {
               </div>
             </div>
           </div>
-
-          {/* Audio works the best */}
-          {/* <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              marginBottom: 100,
-            }}
-            id="description-1"
-          >
-            <div style={{ margin: "5vmin", maxWidth: 500 }}>
-              <h1 style={{ textAlign: "center" }}>Audio works the best</h1>
-              <p>for recording your stories.</p>
-            </div>
-            <PostViewer postId="testing123" />
-            <PostViewer postId="testing123" />
-            <PostViewer postId="testing123" />
-            <PostViewer postId="testing123" />
-            <PostViewer postId="testing123" />
-          </div> */}
 
           {/* Record your stories */}
           <div
