@@ -5,7 +5,7 @@ import { userProfileCollection } from "../../components/firebase";
 import defaultProfilePhoto from "../../images/DefaultPhoto.png";
 import { Router, useParams } from "@reach/router";
 
-function ProfilePage() {
+export default function ProfilePage() {
   return (
     <Router basepath="/u">
       <ProfileViewer path="/:displayId" />
@@ -117,4 +117,8 @@ function ProfileViewer(props: { path: string }) {
   );
 }
 
-export default ProfilePage;
+export const Head = () => (
+  <>
+    <meta name="apple-itunes-app" content="app-id=1630551248" />
+  </>
+);

@@ -23,7 +23,7 @@ const staticImageImgStyle: React.CSSProperties = {
   boxShadow: "var(--shadow-big)",
 };
 
-function IndexPage() {
+export default function IndexPage() {
   return (
     <Layout>
       <title>Atrable: Stories with audio</title>
@@ -231,4 +231,12 @@ function IndexPage() {
   );
 }
 
-export default IndexPage;
+export const Head = () => (
+  <>
+    <meta name="apple-itunes-app" content="app-id=1630551248" />
+    <meta
+      name="description"
+      content="Atrable helps you record audio diaries and chat about it with your friends."
+    />
+  </>
+);
