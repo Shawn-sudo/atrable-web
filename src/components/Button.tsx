@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Component, ReactNode } from "react";
-import "../App.css";
 
 type Props = {
   onPressed?: React.MouseEventHandler<HTMLButtonElement>;
