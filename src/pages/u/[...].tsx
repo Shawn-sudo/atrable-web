@@ -4,6 +4,7 @@ import Layout from "../../components/Layout";
 import { userProfileCollection } from "../../components/firebase";
 import defaultProfilePhoto from "../../images/DefaultPhoto.png";
 import { Router, useParams } from "@reach/router";
+import { Link } from "gatsby";
 
 export default function ProfilePage() {
   return (
@@ -104,13 +105,23 @@ function ProfileViewer(props: { path: string }) {
             margin: 20,
             padding: 10,
             borderRadius: 20,
+            textAlign: "center",
           }}
         >
-          <p style={{ textAlign: "center" }}>
+          <p>
             Get Atrable app to see{" "}
             {typeof displayName != "undefined" ? `${displayName}'s` : "the"}{" "}
             diaries
           </p>
+          <Link to="/" className="Button notcolored-background">
+            What is Atrable?
+          </Link>
+          <a
+            href="https://get.atrable.com"
+            className="Button colored-background"
+          >
+            Get Atrable
+          </a>
         </div>
       </main>
     </Layout>
