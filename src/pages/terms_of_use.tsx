@@ -35,9 +35,9 @@ const TermsOfUse = () => {
               </li>
             </ul>
             <dl>
-              If you share these personal data with us, we would save those on
-              our server, but we don't analyze it. We aren't really interested
-              in you.
+              If you share these personal data with us, we save those on our
+              server. We don't analyze those data tho. We're busy to survive, so
+              got no time to be interested in you.
             </dl>
             <dl>
               <strong>Profile: </strong>
