@@ -133,28 +133,8 @@ export default function IndexPage() {
             </div>
             <div style={{ margin: "5vmin", maxWidth: 500 }}>
               <h1 style={{ textAlign: "center" }}>Audio Diaries</h1>
-              <p>With audio, save your memories vividly.</p>
+              <p>Save your memories vividly with audio.</p>
               {/* <p>Talk about the diary through direct messages.</p> */}
-            </div>
-          </div>
-
-          {/* Listen to yourself */}
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-            }}
-          >
-            <StaticImage
-              src={appScreenshot_myProfile}
-              alt="My Profile"
-              style={staticImageStyle}
-              imgStyle={staticImageImgStyle}
-            />
-            <div style={{ margin: "5vmin", maxWidth: 500 }}>
-              <h1 style={{ textAlign: "center" }}>Listen to yourself</h1>
-              <p>Listen to your past recordings on your profile page.</p>
             </div>
           </div>
 
