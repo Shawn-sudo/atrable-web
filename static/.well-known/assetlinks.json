@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.atrable.atrable",
+      "sha256_cert_fingerprints": [
+        "59:EB:27:96:EA:4A:8E:CC:0C:6A:28:BB:52:EF:9A:93:42:1F:DB:D2:FC:3F:96:83:7D:C8:27:07:21:F8:76:B5"
+      ]
+    }
+  }
+]
