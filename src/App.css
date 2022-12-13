@@ -1,12 +1,13 @@
 :root {
   --primary-color: rgb(172, 138, 248);
   --primary-color-darker: rgb(71, 29, 163);
+  --secondary-color: #FF5252;
   --error-color: rgb(253, 216, 53);
   --higher-background-color: ghostwhite;
   --lower-background-color: white;
   --disabled-color: grey;
   --highlight-color: rgba(248, 248, 255, 0.72);
-  --hint-color-dark: rgb(150, 150, 150);
+  --hint-color: rgb(150, 150, 150);
   --hint-color-light: rgb(180, 180, 180);
   --shadow-color: rgba(112, 144, 156, 0.3);
   --shadow-big: 7.5px 15px 50px rgba(112, 144, 156, 0.15);
