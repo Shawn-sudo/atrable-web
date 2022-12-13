@@ -1,8 +1,8 @@
 import { Link } from "gatsby";
 import React from "react";
-import logo from "../images/icon2_rounded.svg";
-import downloadOnTheAppStore from "../images/external/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
-import downloadOnGooglePlay from "../images/external/google-play-badge.png";
+import logo from "../assets/icon2_rounded.svg";
+import downloadOnTheAppStore from "../assets/external/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
+import downloadOnGooglePlay from "../assets/external/google-play-badge.png";
 
 const Footer = () => {
   return (

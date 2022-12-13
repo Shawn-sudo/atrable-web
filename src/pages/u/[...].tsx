@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { query, where, limit, getDocs } from "firebase/firestore";
 import Layout from "../../components/Layout";
 import { userProfileCollection } from "../../components/firebase";
-import defaultProfilePhoto from "../../images/DefaultPhoto.png";
+import defaultProfilePhoto from "../../assets/DefaultPhoto.png";
 import { Router, useParams } from "@reach/router";
 import { Link } from "gatsby";
 

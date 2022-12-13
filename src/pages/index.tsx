@@ -2,17 +2,13 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 
-const appScreenshot_home =
-  "../images/app_screenshots/Simulator Screen Shot - iPhone 11 Pro Max - 2022-10-08 at 21.39.56.png";
-const appScreenshot_recorder =
-  "../images/app_screenshots/Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-20 at 21.39.56.png";
-const appScreenshot_directMessageChatroom =
-  "../images/app_screenshots/Simulator Screen Shot - iPhone 11 Pro Max - 2022-10-08 at 22.59.04.png";
-const appScreenshot_postSharingPage =
-  "../images/app_screenshots/Simulator Screen Shot - iPhone 11 Pro Max - 2022-10-08 at 23.19.04.png";
-const appScreenshot_myProfile = "../images/app_screenshots/IMG_7625.png";
+import vlog_1 from "../contents/videos/2022-09-23_19_17_41.356837.mp4";
+import vlog_2 from "../contents/videos/2022-10-14_12_29_39.289197.mp4";
+import vlog_3 from "../contents/videos/2022-11-27_22_11_27.457471.mp4";
+import vlog_4 from "../contents/videos/2022-12-04_11_05_34.632438.mp4";
+import vlog_5 from "../contents/videos/2022-07-05_09_45_47.139718.mp4";
 
-const appScreenshot_chat = "../images/app_screenshots/IMG_8882.PNG";
+const appScreenshot_chat = "../contents/app_screenshots/IMG_8882.PNG";
 
 const staticImageStyle: React.CSSProperties = {
   margin: "5vmin",
@@ -126,12 +122,11 @@ export default function IndexPage() {
                     display: "flex",
                   }}
                 >
-                  <VlogViewer src="https://firebasestorage.googleapis.com/v0/b/atrable-story.appspot.com/o/users%2FgEqPbl8UcWUhSexFg4G5Qmgcd4M2%2Fatrable%2Fprivate%2Fpost_imports%2F2022-09-23_19%3A17%3A41.356837.mp4?alt=media&token=afb6c7d9-a2fe-49f5-ad2c-6d6cee8f5944" />
-                  <VlogViewer src="https://firebasestorage.googleapis.com/v0/b/atrable-story.appspot.com/o/users%2FgEqPbl8UcWUhSexFg4G5Qmgcd4M2%2Fatrable%2Fprivate%2Fpost_imports%2F2022-10-14_12%3A29%3A39.289197.mp4?alt=media&token=6b54ade3-53e7-4904-8d0a-10a706823e7d" />
-                  <VlogViewer src="https://firebasestorage.googleapis.com/v0/b/atrable-story.appspot.com/o/users%2FgEqPbl8UcWUhSexFg4G5Qmgcd4M2%2Fatrable%2Fprivate%2Fpost_imports%2F2022-11-27_22%3A11%3A27.457471.mp4?alt=media&token=1c7017e2-3bed-4431-801e-f723db3554fb" />
-                  <VlogViewer src="https://firebasestorage.googleapis.com/v0/b/atrable-story.appspot.com/o/users%2FgEqPbl8UcWUhSexFg4G5Qmgcd4M2%2Fatrable%2Fprivate%2Fpost_imports%2F2022-12-04_11%3A05%3A34.632438.mp4?alt=media&token=590030b9-97cc-4834-a8ed-fd4a82845773" />
-                  <VlogViewer src="https://firebasestorage.googleapis.com/v0/b/atrable-story.appspot.com/o/users%2FgEqPbl8UcWUhSexFg4G5Qmgcd4M2%2Fatrable%2Fprivate%2Fpost_imports%2F2022-10-21_22%3A47%3A36.863227.mp4?alt=media&token=d0f87828-8502-4160-8052-d96e4884e202" />
-                  <VlogViewer src="https://firebasestorage.googleapis.com/v0/b/atrable-story.appspot.com/o/users%2FgEqPbl8UcWUhSexFg4G5Qmgcd4M2%2Fatrable%2Fprivate%2Fpost_imports%2F2022-07-05_09%3A45%3A47.139718.mp4?alt=media&token=f9c07069-1a23-4d12-b6d6-2b5cc6467b0c" />
+                  <VlogViewer src={vlog_1} />
+                  <VlogViewer src={vlog_2} />
+                  <VlogViewer src={vlog_3} />
+                  <VlogViewer src={vlog_4} />
+                  <VlogViewer src={vlog_5} />
                 </div>
                 <p
                   style={{
