@@ -51,7 +51,7 @@ function ProfileViewer(props: { path: string }) {
             backgroundColor: "var(--highlight-color)",
             margin: 20,
             padding: 20,
-            borderRadius: 20,
+            borderRadius: 30,
             display: "flex",
           }}
         >
@@ -104,7 +104,7 @@ function ProfileViewer(props: { path: string }) {
             backgroundColor: "var(--error-color)",
             margin: 20,
             padding: 10,
-            borderRadius: 20,
+            borderRadius: 30,
             textAlign: "center",
           }}
         >
