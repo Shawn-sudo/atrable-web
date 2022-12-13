@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import logo from "../images/icon2_rounded.svg";
 import downloadOnTheAppStore from "../images/external/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
+import downloadOnGooglePlay from "../images/external/google-play-badge.png";
 
 const Footer = () => {
   return (
@@ -46,7 +47,7 @@ const Footer = () => {
                     color: "var(--hint-color-light)",
                   }}
                 >
-                  Stories with audio
+                  Vlog & Chat
                 </p>
               </div>
             </div>
@@ -78,8 +79,16 @@ const Footer = () => {
           <a href={"https://apps.apple.com/us/app/atrable/id1630551248"}>
             <img
               src={downloadOnTheAppStore}
-              alt="Download on the App Store"
+              alt="Download on Apple App Store"
               height={50}
+              style={{ margin: 10 }}
+            />
+          </a>
+          <a href={"https://play.google.com/apps/testing/com.atrable.atrable"}>
+            <img
+              src={downloadOnGooglePlay}
+              alt="Get it on Google Play (Beta)"
+              height={70}
             />
           </a>
         </div>
