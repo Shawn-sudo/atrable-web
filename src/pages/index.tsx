@@ -136,8 +136,14 @@ export default function IndexPage() {
                   }}
                 >
                   Vlogs from{" "}
-                  <a href="https://www.atrable.com/u/shawn">Shawn L</a>, who
-                  made Atrable
+                  <a
+                    href="https://www.atrable.com/u/shawn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Shawn L
+                  </a>
+                  , who made Atrable
                 </p>
               </div>
             </div>
@@ -172,14 +178,16 @@ export default function IndexPage() {
             <div
               style={{
                 padding: 10,
+                maxWidth: 300,
+                textAlign: "center",
               }}
             >
-              <p>Talk about the Vlogs that you recorded.</p>
+              <p>Talk about the Vlogs that you recorded with friends.</p>
             </div>
           </div>
         </div>
 
-        <h1 style={{ margin: "auto", textAlign: "center" }}>
+        <h1 style={{ textAlign: "center", margin: 100 }}>
           Get Atrable on{" "}
           <a
             href="https://get.atrable.com"
@@ -189,40 +197,144 @@ export default function IndexPage() {
           </a>
         </h1>
 
-        {/* <div
+        <div
           style={{
             backgroundColor: "var(--primary-color)",
           }}
         >
-          <h2>New Features</h2>
+          <div
+            className="horizontal-margin"
+            style={{ padding: 50, paddingBottom: 0 }}
+          >
+            <h1 style={{ color: "white" }}>New Features</h1>
+          </div>
+          <div style={{ width: "100vw", maxWidth: 1500, margin: "auto" }}>
+            <div
+              style={{
+                margin: "auto",
+                overflowX: "scroll",
+                overscrollBehaviorX: "contain",
+                display: "flex",
+              }}
+            >
+              <div style={{ width: 30, flexShrink: 0 }} />
+              <FeatureCard
+                title="Diary Visibility"
+                subtitle="Diary"
+                body={
+                  <p>
+                    You can choose whom to be able to view your diary (public /
+                    only friends / private).
+                  </p>
+                }
+              />
+              <FeatureCard
+                title="Reply to a Diary"
+                subtitle="Diary + Chat"
+                body={
+                  <p>
+                    You can reply to the uploader about their diaries. You can
+                    also send your diaries to your friends.
+                  </p>
+                }
+              />
+              <FeatureCard
+                title="Emoji Reaction for Diary"
+                subtitle="Diary"
+                body={<p>You can quickly react to a diary using emojis.</p>}
+              />
+            </div>
+          </div>
         </div>
 
-        <h2>Developing</h2>
-        <p>
-          We're developing these features. They are not out there yet, but
-          you'll meet them soon.
-        </p> */}
-
-        {/* <main className="horizontal-margin"> */}
-        <div id="index-descriptions">
-          {/* New on Atrable */}
-          {/* Specific visibility settings */}
-
-          {/* More: Developing Story, Atrable Developer */}
-          <a
-            href="https://get.atrable.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="Button notcolored-background"
-            style={{
-              textDecoration: "none",
-              display: "flex",
-              flexWrap: "wrap",
-              width: "fit-content",
-            }}
+        <div
+          style={{
+            backgroundColor: "var(--primary-color)",
+          }}
+        >
+          <div
+            className="horizontal-margin"
+            style={{ padding: 50, paddingBottom: 0 }}
           >
-            Get Atrable →
-          </a>
+            <h1 style={{ color: "white" }}>In Development</h1>
+            {/* <p style={{ color: "white" }}>
+              We're developing these features. They are not out there yet, but
+              you'll meet them soon.
+            </p> */}
+          </div>
+          <div style={{ width: "100vw", maxWidth: 1500, margin: "auto" }}>
+            <div
+              style={{
+                margin: "auto",
+                overflowX: "scroll",
+                overscrollBehaviorX: "contain",
+                display: "flex",
+              }}
+            >
+              <div style={{ width: 30, flexShrink: 0 }} />
+              <FeatureCard
+                title="End-to-end Encryption"
+                subtitle="Chat"
+                body={
+                  <p>
+                    Currently, your chat messages are only encrypted in-transit.
+                    We're working hard to implement end-to-end encryption for
+                    chats messages.
+                  </p>
+                }
+              />
+              <FeatureCard
+                title="Diary Notification"
+                subtitle="Diary"
+                body={
+                  <>
+                    <p>
+                      You'll be able to noitfy the selected ones of your friends
+                      of your new diary.
+                    </p>
+                    <p>
+                      Some Thoughts: If every of your friends are notified of
+                      your new diary, you'll likely to upload what{" "}
+                      <strong>your friends</strong> would like and care, not
+                      what <strong>you</strong> care.
+                    </p>
+                  </>
+                }
+              />
+              <FeatureCard
+                title="Check Replies of a Diary"
+                subtitle="Diary"
+                body={
+                  <p>
+                    Currently, you can reply to a diary, but you cannot check
+                    the replies on the <code>Diary Details</code> page. We'll
+                    implement this soon.
+                  </p>
+                }
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="horizontal-margin" style={{ padding: 50 }}>
+          <h1>Motivation of Atrable Project</h1>
+          <p>
+            How do you get closer to your friends? I've got an answer for you:
+            you share your experiences with them, you relate to the stories that
+            they share, then you'll get closer to them.
+          </p>
+          <p>
+            None of the social media that I knew was focused on letting us share
+            our stories; they were focused on some other stuffs like ads, AR
+            lenses, being real, …. I thought I could make a social networking
+            site that actually focuses on helping us getting closer to others,
+            so I made one.
+          </p>
+          <p>
+            On Atrable, you are required to record audio to upload a diary (or
+            "vlog" / "post"). With audio, people would more focus on the stories
+            itself.
+          </p>
           <a
             href="https://seihyun.atrable.com/"
             target="_blank"
@@ -268,6 +380,35 @@ const VlogViewer = (props: { src: string }) => {
         width={300}
         style={{}}
       />
+    </div>
+  );
+};
+
+const FeatureCard = (props: {
+  title: string;
+  subtitle?: string;
+  body?: React.ReactNode;
+}) => {
+  return (
+    <div
+      style={{
+        margin: 20,
+        width: 500,
+        borderRadius: 30,
+        backgroundColor: "white",
+        flexShrink: 0,
+        alignSelf: "flex-start",
+      }}
+    >
+      <div
+        style={{
+          padding: 30,
+        }}
+      >
+        <h1>{props.title}</h1>
+        <h4 style={{ color: "var(--hint-color)" }}>{props.subtitle}</h4>
+        {props.body}
+      </div>
     </div>
   );
 };
