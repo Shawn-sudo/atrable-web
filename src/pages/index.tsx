@@ -79,84 +79,72 @@ export default function IndexPage() {
         </div>
 
         <div
-          className="horizontal-margin"
           style={{
+            overflowX: "scroll",
+            overscrollBehaviorX: "contain",
             display: "flex",
-            justifyContent: "center",
-            flexWrap: "wrap",
           }}
         >
-          <div style={{ width: "100vw" }}>
+          <div
+            style={{
+              width: "calc(50vw - 10vw - 10vw - 500px)",
+              flexShrink: 0,
+            }}
+          />
+          <div
+            style={{
+              marginLeft: "10vw",
+              marginRight: "10vw",
+            }}
+          >
+            <h1
+              style={{
+                fontSize: 100,
+                marginTop: 100,
+                marginBottom: 0,
+                color: "var(--secondary-color)",
+              }}
+            >
+              VLOG
+            </h1>
+            <div style={{ width: 300, padding: 10 }}>
+              <h2>Your life is a travel. </h2>
+              <p>
+                Record those happy / sad / exciting / or depressing moments on
+                Atrable.
+              </p>
+            </div>
+          </div>
+
+          <div>
             <div
               style={{
-                margin: "auto",
-                overflowX: "scroll",
-                overscrollBehaviorX: "contain",
                 display: "flex",
               }}
             >
-              <div
-                style={{
-                  width: "calc(50vw - 10vw - 10vw - 700px)",
-                  flexShrink: 0,
-                }}
-              />
-              <div
-                style={{
-                  marginLeft: "10vw",
-                  marginRight: "10vw",
-                }}
-              >
-                <h1
-                  style={{
-                    fontSize: 100,
-                    marginTop: 100,
-                    marginBottom: 0,
-                    color: "var(--secondary-color)",
-                  }}
-                >
-                  VLOG
-                </h1>
-                <div style={{ width: 300, padding: 10 }}>
-                  <h2>Your life is a travel. </h2>
-                  <p>
-                    Record those happy / sad / exciting / or depressing moments
-                    on Atrable.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div
-                  style={{
-                    display: "flex",
-                  }}
-                >
-                  <VlogViewer src={vlog_1} />
-                  <VlogViewer src={vlog_2} />
-                  <VlogViewer src={vlog_3} />
-                  <VlogViewer src={vlog_4} />
-                  <VlogViewer src={vlog_5} />
-                </div>
-                <p
-                  style={{
-                    marginLeft: 50,
-                    color: "var(--hint-color)",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Vlogs from{" "}
-                  <a
-                    href="https://www.atrable.com/u/shawn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Shawn L
-                  </a>
-                  , who made Atrable
-                </p>
-              </div>
+              <VlogViewer src={vlog_1} />
+              <VlogViewer src={vlog_2} />
+              <VlogViewer src={vlog_3} />
+              <VlogViewer src={vlog_4} />
+              <VlogViewer src={vlog_5} />
             </div>
+            <p
+              style={{
+                marginLeft: 50,
+                color: "var(--hint-color)",
+                fontStyle: "italic",
+              }}
+            >
+              Video Diaries from{" "}
+              <a
+                href="https://www.atrable.com/u/shawn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shawn L
+              </a>
+              , who made Atrable
+            </p>
           </div>
         </div>
 
@@ -171,7 +159,7 @@ export default function IndexPage() {
           <StaticImage
             src={appScreenshot_chat}
             alt="Direct Message Chatroom"
-            style={staticImageStyle}
+            style={{ ...staticImageStyle, alignSelf: "center" }}
             imgStyle={staticImageImgStyle}
           />
           <div style={{ margin: "5vmin", maxWidth: 500 }}>
@@ -197,7 +185,7 @@ export default function IndexPage() {
           </div>
         </div>
 
-        <h1 style={{ textAlign: "center", margin: 100 }}>
+        <h1 style={{ textAlign: "center", marginTop: 100, marginBottom: 100 }}>
           Get Atrable on{" "}
           <a
             href="https://get.atrable.com"
@@ -221,7 +209,7 @@ export default function IndexPage() {
           </div>
           <div
             style={{
-              width: "100vw",
+              width: "100%",
             }}
           >
             <div
@@ -279,7 +267,7 @@ export default function IndexPage() {
               you'll meet them soon.
             </p> */}
           </div>
-          <div style={{ width: "100vw", margin: "auto" }}>
+          <div style={{ width: "100%", margin: "auto" }}>
             <div
               style={{
                 margin: "auto",
@@ -348,18 +336,21 @@ export default function IndexPage() {
             <h1>Motivation of Atrable Project</h1>
             <p>
               How do you get closer to your friends? You share your stories with
-              each other, then you'll understand them and get closer to them.
+              each other, then you'll understand each other and get closer.
             </p>
             <p>
               None of the social media that I know was focused on letting us
               share our actual experiences; they were all focused on some other
-              stuff like ads, AR lenses, being real, … I thought I could make a
+              stuff (ads, AR lenses, being real, …). I thought I could make a
               social networking site that actually focuses on helping us getting
               closer to others, so I made one.
             </p>
             <p>
               On Atrable, you are required to record audio to upload a diary.
               With audio, people would more focus on the stories itself.
+            </p>
+            <p style={{ textAlign: "end", color: "var(--hint-color)" }}>
+              - Seihyun (Shawn) Lee, Dec 2022
             </p>
             <a
               href="https://seihyun.atrable.com/"
