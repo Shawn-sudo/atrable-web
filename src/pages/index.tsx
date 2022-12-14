@@ -213,6 +213,7 @@ export default function IndexPage() {
           }}
         >
           <div
+            id="updates"
             className="horizontal-margin"
             style={{ padding: 50, paddingBottom: 0 }}
           >
@@ -268,10 +269,11 @@ export default function IndexPage() {
           }}
         >
           <div
+            id="in-development"
             className="horizontal-margin"
             style={{ padding: 50, paddingBottom: 0 }}
           >
-            <h1 style={{ color: "white" }}>In Development</h1>
+            <h1 style={{ color: "white" }}>In Development 👨‍💻😵‍💫</h1>
             {/* <p style={{ color: "white" }}>
               We're developing these features. They are not out there yet, but
               you'll meet them soon.
@@ -342,12 +344,12 @@ export default function IndexPage() {
             justifyContent: "center",
           }}
         >
-          <div style={{ maxWidth: 500 }}>
+          <div id="motivation" style={{ maxWidth: 500 }}>
             <h1>Motivation of Atrable Project</h1>
             <p>
-              How do you get closer to your friends? I've got an answer for you:
-              you share your experiences with them, you relate to the stories
-              that they share, then you'll get closer to them.
+              How do you get closer to your friends? You share your experiences
+              with them, you listen to the stories that they share, then you'll
+              understand them and get closer to them.
             </p>
             <p>
               None of the social media that I knew was focused on letting us
