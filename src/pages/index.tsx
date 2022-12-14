@@ -247,6 +247,7 @@ export default function IndexPage() {
                 subtitle="Diary (Jul 2022)"
                 body={<p>You can quickly react to a diary using emojis.</p>}
               />
+              <div style={{ width: "calc(50vw - 700px)", flexShrink: 0 }} />
             </div>
           </div>
         </div>
@@ -319,6 +320,41 @@ export default function IndexPage() {
                   </p>
                 }
               />
+              <FeatureCard
+                title="Reduce Audio Uploading Time"
+                subtitle="Diary & Chat"
+                body={
+                  <>
+                    <p>
+                      Currently, the recorded audio / video starts uploading
+                      once you press "Upload", "Post", or "Send" button. We're
+                      planning to start uploading the audio / video while the
+                      recording is going on.
+                    </p>
+                    <p>
+                      Some Thoughts: If the user cancels recording, the uploaded
+                      audio snippet should be deleted from the server.
+                    </p>
+                  </>
+                }
+              />
+              <FeatureCard
+                title="Backup Chats"
+                subtitle="Chat"
+                body={
+                  <>
+                    <p>
+                      Currently, the chat messages are saved in the server.
+                      We're going to make the messages be deleted once read.
+                    </p>
+                    <p>
+                      Once we implement that, we'd have to provide you a method
+                      to backup your chat messages.
+                    </p>
+                  </>
+                }
+              />
+              <div style={{ width: "calc(50vw - 700px)", flexShrink: 0 }} />
             </div>
           </div>
         </div>
@@ -414,7 +450,7 @@ const FeatureCard = (props: {
   body?: React.ReactNode;
 }) => {
   return (
-    <div
+    <article
       style={{
         margin: 20,
         width: "60vw",
@@ -434,7 +470,7 @@ const FeatureCard = (props: {
         <h4 style={{ color: "var(--hint-color)" }}>{props.subtitle}</h4>
         {props.body}
       </div>
-    </div>
+    </article>
   );
 };
 
