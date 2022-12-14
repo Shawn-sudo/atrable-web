@@ -182,7 +182,7 @@ export default function IndexPage() {
                 textAlign: "center",
               }}
             >
-              <p>Talk about the Vlogs that you recorded with friends.</p>
+              <p>Talk with friends about the Vlogs that you recorded.</p>
             </div>
           </div>
         </div>
@@ -219,18 +219,8 @@ export default function IndexPage() {
             >
               <div style={{ width: 30, flexShrink: 0 }} />
               <FeatureCard
-                title="Diary Visibility"
-                subtitle="Diary"
-                body={
-                  <p>
-                    You can choose whom to be able to view your diary (public /
-                    only friends / private).
-                  </p>
-                }
-              />
-              <FeatureCard
                 title="Reply to a Diary"
-                subtitle="Diary + Chat"
+                subtitle="Diary + Chat (Oct 2022)"
                 body={
                   <p>
                     You can reply to the uploader about their diaries. You can
@@ -239,8 +229,18 @@ export default function IndexPage() {
                 }
               />
               <FeatureCard
+                title="Diary Visibility"
+                subtitle="Diary (Sep 2022)"
+                body={
+                  <p>
+                    You can choose whom to be able to view your diary (public /
+                    only friends / private).
+                  </p>
+                }
+              />
+              <FeatureCard
                 title="Emoji Reaction for Diary"
-                subtitle="Diary"
+                subtitle="Diary (Jul 2022)"
                 body={<p>You can quickly react to a diary using emojis.</p>}
               />
             </div>
