@@ -347,16 +347,15 @@ export default function IndexPage() {
           <div id="motivation" style={{ maxWidth: 500 }}>
             <h1>Motivation of Atrable Project</h1>
             <p>
-              How do you get closer to your friends? You share your experiences
-              with them, you listen to the stories that they share, then you'll
-              understand them and get closer to them.
+              How do you get closer to your friends? You share your stories with
+              each other, then you'll understand them and get closer to them.
             </p>
             <p>
-              None of the social media that I knew was focused on letting us
-              share our stories; they were focused on some other stuffs like
-              ads, AR lenses, being real, …. I thought I could make a social
-              networking site that actually focuses on helping us getting closer
-              to others, so I made one.
+              None of the social media that I know was focused on letting us
+              share our actual experiences; they were all focused on some other
+              stuff like ads, AR lenses, being real, … I thought I could make a
+              social networking site that actually focuses on helping us getting
+              closer to others, so I made one.
             </p>
             <p>
               On Atrable, you are required to record audio to upload a diary.
