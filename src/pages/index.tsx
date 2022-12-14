@@ -86,7 +86,7 @@ export default function IndexPage() {
             flexWrap: "wrap",
           }}
         >
-          <div style={{ width: "100vw", maxWidth: 1500 }}>
+          <div style={{ width: "100vw" }}>
             <div
               style={{
                 margin: "auto",
@@ -95,20 +95,29 @@ export default function IndexPage() {
                 display: "flex",
               }}
             >
-              <div>
+              <div
+                style={{
+                  width: "calc(50vw - 10vw - 10vw - 700px)",
+                  flexShrink: 0,
+                }}
+              />
+              <div
+                style={{
+                  marginLeft: "10vw",
+                  marginRight: "10vw",
+                }}
+              >
                 <h1
                   style={{
                     fontSize: 100,
                     marginTop: 100,
-                    marginLeft: "10vw",
-                    marginRight: "10vw",
                     marginBottom: 0,
                     color: "var(--secondary-color)",
                   }}
                 >
                   VLOG
                 </h1>
-                <div style={{ width: 300, marginLeft: "10vw", padding: 10 }}>
+                <div style={{ width: 300, padding: 10 }}>
                   <h2>Your life is a travel. </h2>
                   <p>
                     Record those happy / sad / exciting / or depressing moments
@@ -116,6 +125,7 @@ export default function IndexPage() {
                   </p>
                 </div>
               </div>
+
               <div>
                 <div
                   style={{
@@ -206,9 +216,13 @@ export default function IndexPage() {
             className="horizontal-margin"
             style={{ padding: 50, paddingBottom: 0 }}
           >
-            <h1 style={{ color: "white" }}>New Features</h1>
+            <h1 style={{ color: "white" }}>Updates on Atrable</h1>
           </div>
-          <div style={{ width: "100vw", maxWidth: 1500, margin: "auto" }}>
+          <div
+            style={{
+              width: "100vw",
+            }}
+          >
             <div
               style={{
                 margin: "auto",
@@ -217,6 +231,7 @@ export default function IndexPage() {
                 display: "flex",
               }}
             >
+              <div style={{ width: "calc(50vw - 700px)", flexShrink: 0 }} />
               <div style={{ width: 30, flexShrink: 0 }} />
               <FeatureCard
                 title="Reply to a Diary"
@@ -262,7 +277,7 @@ export default function IndexPage() {
               you'll meet them soon.
             </p> */}
           </div>
-          <div style={{ width: "100vw", maxWidth: 1500, margin: "auto" }}>
+          <div style={{ width: "100vw", margin: "auto" }}>
             <div
               style={{
                 margin: "auto",
@@ -271,6 +286,7 @@ export default function IndexPage() {
                 display: "flex",
               }}
             >
+              <div style={{ width: "calc(50vw - 700px)", flexShrink: 0 }} />
               <div style={{ width: 30, flexShrink: 0 }} />
               <FeatureCard
                 title="End-to-end Encryption"
@@ -296,7 +312,8 @@ export default function IndexPage() {
                       Some Thoughts: If every of your friends are notified of
                       your new diary, you'll likely to upload what{" "}
                       <strong>your friends</strong> would like and care, not
-                      what <strong>you</strong> care.
+                      what <strong>you</strong> care. We're going to let you
+                      choose whom to be notified.
                     </p>
                   </>
                 }
@@ -316,39 +333,54 @@ export default function IndexPage() {
           </div>
         </div>
 
-        <div className="horizontal-margin" style={{ padding: 50 }}>
-          <h1>Motivation of Atrable Project</h1>
-          <p>
-            How do you get closer to your friends? I've got an answer for you:
-            you share your experiences with them, you relate to the stories that
-            they share, then you'll get closer to them.
-          </p>
-          <p>
-            None of the social media that I knew was focused on letting us share
-            our stories; they were focused on some other stuffs like ads, AR
-            lenses, being real, …. I thought I could make a social networking
-            site that actually focuses on helping us getting closer to others,
-            so I made one.
-          </p>
-          <p>
-            On Atrable, you are required to record audio to upload a diary (or
-            "vlog" / "post"). With audio, people would more focus on the stories
-            itself.
-          </p>
-          <a
-            href="https://seihyun.atrable.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="Button notcolored-background"
-            style={{
-              textDecoration: "none",
-              display: "flex",
-              justifyContent: "space-evenly",
-              width: "fit-content",
-            }}
-          >
-            More about the Developer →
-          </a>
+        <div
+          className="horizontal-margin"
+          style={{
+            padding: 50,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          <div style={{ maxWidth: 500 }}>
+            <h1>Motivation of Atrable Project</h1>
+            <p>
+              How do you get closer to your friends? I've got an answer for you:
+              you share your experiences with them, you relate to the stories
+              that they share, then you'll get closer to them.
+            </p>
+            <p>
+              None of the social media that I knew was focused on letting us
+              share our stories; they were focused on some other stuffs like
+              ads, AR lenses, being real, …. I thought I could make a social
+              networking site that actually focuses on helping us getting closer
+              to others, so I made one.
+            </p>
+            <p>
+              On Atrable, you are required to record audio to upload a diary.
+              With audio, people would more focus on the stories itself.
+            </p>
+            <a
+              href="https://seihyun.atrable.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="Button notcolored-background"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                justifyContent: "space-evenly",
+                width: "fit-content",
+              }}
+            >
+              More about the Developer →
+            </a>
+          </div>
+          <StaticImage
+            src="../contents/images/IMG_8891.jpg"
+            alt="Me developing Atrable"
+            style={staticImageStyle}
+            imgStyle={staticImageImgStyle}
+          />
         </div>
       </main>
     </Layout>
@@ -393,7 +425,8 @@ const FeatureCard = (props: {
     <div
       style={{
         margin: 20,
-        width: 500,
+        width: "60vw",
+        maxWidth: 500,
         borderRadius: 30,
         backgroundColor: "white",
         flexShrink: 0,
