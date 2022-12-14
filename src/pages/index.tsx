@@ -378,9 +378,9 @@ export default function IndexPage() {
             </a>
           </div>
           <StaticImage
-            src="../contents/images/IMG_8891.jpg"
+            src="../contents/images/me_with_teddy_bear.jpg"
             alt="Me developing Atrable"
-            style={staticImageStyle}
+            style={{ ...staticImageStyle, maxWidth: "50vmin" }}
             imgStyle={staticImageImgStyle}
           />
         </div>
