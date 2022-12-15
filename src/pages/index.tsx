@@ -377,9 +377,9 @@ export default function IndexPage() {
             <p>
               None of the social media that I know was focused on letting us
               share our actual experiences; they were all focused on some other
-              stuff (ads, AR lenses, being real, …). I thought I could make a
-              social networking site that actually focuses on helping us getting
-              closer to others, so I made one.
+              stuff (ads, entertainment, AR lenses, being real, …). I thought I
+              could make a social networking site that actually focuses on
+              helping us getting closer to others, so I made one.
             </p>
             <p>
               On Atrable, you are required to record audio to upload a diary.
