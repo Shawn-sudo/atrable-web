@@ -7,6 +7,11 @@ import vlog_2 from "../contents/videos/2022-10-14_12_29_39.289197.mp4";
 import vlog_3 from "../contents/videos/2022-11-27_22_11_27.457471.mp4";
 import vlog_4 from "../contents/videos/2022-12-04_11_05_34.632438.mp4";
 import vlog_5 from "../contents/videos/2022-07-05_09_45_47.139718.mp4";
+import vlog_1_thumbnail from "../contents/videos/2022-09-23_19_17_41.356837_thumbnail.webp";
+import vlog_2_thumbnail from "../contents/videos/2022-10-14_12_29_39.289197_thumbnail.webp";
+import vlog_3_thumbnail from "../contents/videos/2022-11-27_22_11_27.457471_thumbnail.webp";
+import vlog_4_thumbnail from "../contents/videos/2022-12-04_11_05_34.632438_thumbnail.webp";
+import vlog_5_thumbnail from "../contents/videos/2022-07-05_09_45_47.139718_thumbnail.webp";
 
 const appScreenshot_chat = "../contents/app_screenshots/IMG_8882.PNG";
 
@@ -122,11 +127,11 @@ export default function IndexPage() {
                 display: "flex",
               }}
             >
-              <VlogViewer src={vlog_1} />
-              <VlogViewer src={vlog_2} />
-              <VlogViewer src={vlog_3} />
-              <VlogViewer src={vlog_4} />
-              <VlogViewer src={vlog_5} />
+              <VlogViewer src={vlog_1} backgroundImage={vlog_1_thumbnail} />
+              <VlogViewer src={vlog_2} backgroundImage={vlog_2_thumbnail} />
+              <VlogViewer src={vlog_3} backgroundImage={vlog_3_thumbnail} />
+              <VlogViewer src={vlog_4} backgroundImage={vlog_4_thumbnail} />
+              <VlogViewer src={vlog_5} backgroundImage={vlog_5_thumbnail} />
             </div>
             <p
               style={{
@@ -415,7 +420,7 @@ export default function IndexPage() {
   );
 }
 
-const VlogViewer = (props: { src: string }) => {
+const VlogViewer = (props: { src: string; backgroundImage?: string }) => {
   return (
     <div
       style={{
@@ -432,14 +437,15 @@ const VlogViewer = (props: { src: string }) => {
       }}
     >
       <video
-        src={props.src}
         autoPlay
         muted
         loop
         playsInline
         width={300}
-        style={{}}
-      />
+        poster={props.backgroundImage}
+      >
+        <source src={props.src} type="video/mp4" />
+      </video>
     </div>
   );
 };
