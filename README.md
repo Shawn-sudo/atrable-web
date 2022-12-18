@@ -1,7 +1,7 @@
 ## Migrating to NextJS soon
-We needed SSR for /u/** pages, but GatsbyJS doesn't really support SSR well (they have some docuementations, but it wasn't sufficient enough to actually make one)
+We needed SSR for /u/** pages, but GatsbyJS doesn't really support SSR well (they have some documentations, but it wasn't sufficient enough to actually make one)
 
-## Source code for www.atrable.com
+## Used to be the source code for www.atrable.com
 
 ## Routes
 - / : Welcome page with some of my video diaries
