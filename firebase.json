@@ -18,7 +18,25 @@
       {
         "source": "/u/**",
         "destination": "/u/[...]/index.html"
+      },
+      {
+        "source": "/testing/**",
+        "function": "testing",
+        "region": "us-central1"
       }
     ]
-  }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run build"]
+    }
+  ]
 }
